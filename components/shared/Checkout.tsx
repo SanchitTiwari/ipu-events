@@ -10,8 +10,6 @@ loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 const Checkout = ({ event, userId }: { event: IEvent, userId: string }) => {
   useEffect(() => {
     // Check to see if this is a redirect back from Checkout
-    // this comment is for checking the branch pull request
-    
     const query = new URLSearchParams(window.location.search);
     if (query.get('success')) {
       console.log('Order placed! You will receive an email confirmation.');
