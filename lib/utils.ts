@@ -52,10 +52,14 @@ export const formatPrice = (price: string) => {
   const formattedPrice = new Intl.NumberFormat('en-US', {
     style: 'currency',
 <<<<<<< HEAD
+<<<<<<< HEAD
     currency: 'USD',
 =======
     currency: 'INR',
 >>>>>>> deployment
+=======
+    currency: 'INR',
+>>>>>>> ae11d0a6bcd141dff7adf03c82dfaed6d4057789
   }).format(amount)
 
   return formattedPrice
